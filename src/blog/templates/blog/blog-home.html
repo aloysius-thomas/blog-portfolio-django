@@ -1,0 +1,142 @@
+{% extends 'home/base.html' %}
+{% load static %}
+{% block contents %}
+
+
+    <div class="intro intro-single route bg-image" style="background-image: url({% static 'img/overlay-bg.jpg' %})">
+        <div class="overlay-mf"></div>
+        <div class="intro-content display-table">
+            <div class="table-cell">
+                <div class="container">
+                    <h2 class="intro-title mb-4">My Blog</h2>
+                    <ol class="breadcrumb d-flex justify-content-center">
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main id="main">
+        <!-- ======= Blog Section ======= -->
+        <section id="blog" class="blog-mf sect-pt4 route">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card card-blog">
+                            <div class="card-img">
+                                <a href="{% url 'blog-details' %}">
+                                    <img src="{% static 'img/post-1.jpg' %}"
+                                         alt=""
+                                         class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-category-box">
+                                    <div class="card-category">
+                                        <h6 class="category">Travel</h6>
+                                    </div>
+                                </div>
+                                <h3 class="card-title"><a href="{% url 'blog-details' %}">See more ideas about
+                                    Travel</a></h3>
+                                <p class="card-description">
+                                    Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent
+                                    sapien
+                                    massa, convallis
+                                    a pellentesque nec,
+                                    egestas non nisi.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="post-author">
+                                    <a href="#">
+                                        <img src="{% static 'img/testimonial-2.jpg' %}" alt=""
+                                             class="avatar rounded-circle">
+                                        <span class="author">Morgan Freeman</span>
+                                    </a>
+                                </div>
+                                <div class="post-date">
+                                    <span class="ion-ios-clock-outline"></span> 10 min
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card card-blog">
+                            <div class="card-img">
+                                <a href="{% url 'blog-details' %}"><img src="{% static 'img/post-2.jpg' %}" alt=""
+                                                                        class="img-fluid"></a>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-category-box">
+                                    <div class="card-category">
+                                        <h6 class="category">Web Design</h6>
+                                    </div>
+                                </div>
+                                <h3 class="card-title"><a href="{% url 'blog-details' %}">See more ideas about
+                                    Travel</a></h3>
+                                <p class="card-description">
+                                    Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent
+                                    sapien
+                                    massa, convallis
+                                    a pellentesque nec,
+                                    egestas non nisi.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="post-author">
+                                    <a href="#">
+                                        <img src="{% static 'img/testimonial-2.jpg' %}"
+                                             alt=""
+                                             class="avatar rounded-circle">
+                                        <span class="author">Morgan Freeman</span>
+                                    </a>
+                                </div>
+                                <div class="post-date">
+                                    <span class="ion-ios-clock-outline"></span> 10 min
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card card-blog">
+                            <div class="card-img">
+                                <a href="{% url 'blog-details' %}">
+                                    <img src="{% static 'img/post-3.jpg' %}" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-category-box">
+                                    <div class="card-category">
+                                        <h6 class="category">Web Design</h6>
+                                    </div>
+                                </div>
+                                <h3 class="card-title"><a href="{% url 'blog-details' %}">See more ideas about
+                                    Travel</a></h3>
+                                <p class="card-description">
+                                    Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent
+                                    sapien
+                                    massa, convallis
+                                    a pellentesque nec,
+                                    egestas non nisi.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="post-author">
+                                    <a href="#">
+                                        <img src="{% static 'img/testimonial-2.jpg' %}" alt=""
+                                             class="avatar rounded-circle">
+                                        <span class="author">Morgan Freeman</span>
+                                    </a>
+                                </div>
+                                <div class="post-date">
+                                    <span class="ion-ios-clock-outline"></span> 10 min
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- End Blog Section -->
+    </main>
+
+{% endblock %}
