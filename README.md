@@ -1,1 +1,1 @@
-# blog-portfolio-django
+# Blog in Django
